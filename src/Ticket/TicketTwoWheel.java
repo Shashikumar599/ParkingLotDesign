@@ -5,9 +5,13 @@ import Vehicle.Vehicle;
 public class TicketTwoWheel extends Ticket{
 
 
-    TicketTwoWheel(int EntryTime , int ParkingSpotId , Vehicle vehicle , int FirstHour , int NextHours){
+    TicketTwoWheel(int EntryTime , int ParkingSpotId , Vehicle vehicle ){
         super(EntryTime,ParkingSpotId,vehicle);
-        this.FirstHour=FirstHour;
-        this.NextHours=NextHours;
+        this.FirstHour=10;
+        this.NextHours=20;
+    }
+
+    public TicketTwoWheel() {
+        super();
     }
 }

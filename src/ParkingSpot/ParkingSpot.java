@@ -11,6 +11,7 @@ public class ParkingSpot {
 
     public ParkingSpot(int Id ){
         this.Id=Id;
+        isempty=true;
     }
     public void Add(Vehicle vehicle){
         this.isempty=false;

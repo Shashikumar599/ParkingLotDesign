@@ -21,6 +21,7 @@ public class ParkingSpotManager {
              return -1;
          }
          ParkingSpots.get(Availble).Add(vehicle);
+         VehicleParking.put(vehicle,Availble);
          return ParkingSpots.get(Availble).Id;
      }
 
@@ -31,7 +32,7 @@ public class ParkingSpotManager {
      }
      private int FindSpot(){
          for(int i=0;i<ParkingSpots.size();i++){
-             if(!ParkingSpots.get(i).isempty)
+             if(ParkingSpots.get(i).isempty)
                  return i;
          }
          return -1;

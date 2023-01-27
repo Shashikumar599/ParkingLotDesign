@@ -11,6 +11,10 @@ public class Ticket {
     protected int FirstHour;
     protected int NextHours;
 
+    public Ticket() {
+
+    }
+//    public void set(int EntryTime , int ParkingSpotId , Vehicle vehicle)
     public Vehicle getVehicle() {
         return vehicle;
     }
