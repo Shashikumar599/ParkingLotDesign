@@ -31,6 +31,7 @@ public class Ticket {
      public int cost(int ExitTime){
         this.ExitTime=ExitTime;
         return FirstHour+(ExitTime-EntryTime)*NextHours;
+        //comment
      }
 
 }
